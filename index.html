@@ -38,16 +38,18 @@
     }
     nav a:hover { opacity:0.8; }
 
-    /* Header (Compact Banner) */
-    header {
-      background:#333;
-      color:white;
-      text-align:center;
-      padding:2rem 1rem;
-    }
-    header h1 { font-size:2.2rem; margin-bottom:0.2rem; }
-    header h3 { font-weight:normal; font-size:1.1rem; opacity:0.8; margin-bottom:0.2rem; }
-    header p { font-size:1rem; opacity:0.8; margin:0; }
+/* Header (Compact and Static) */
+header {
+  background:#333;           /* dark banner color */
+  color:white;
+  text-align:center;
+  padding:0.3rem 0.3rem;         /* smaller vertical padding */
+  position:static;           /* stays at the top, not sticky */
+}
+header h1 { font-size:1.8rem; margin-bottom:0.2rem; }
+header h3 { font-weight:normal; font-size:1rem; opacity:0.8; margin-bottom:0.2rem; }
+header p { font-size:0.9rem; opacity:0.8; margin:0; }
+
 
     /* Main Content */
     main {
