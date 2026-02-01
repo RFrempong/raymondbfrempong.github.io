@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raymond Boadi Frempong</title>
+  <meta name="description" content="Raymond Boadi Frempong - Associate Professor in Development Economics. Research on food security, inequality, natural resources, and child labour in Sub-Saharan Africa.">
   <style>
     /* Base Reset */
     * {
@@ -13,45 +14,49 @@
     }
 
     html {
-      scroll-behavior: smooth; /* Smooth scrolling */
+      scroll-behavior: smooth; /* smooth scrolling for nav links */
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.7;
-      color: #333333;
+      color: #333;
       background-color: #f8f9fa;
     }
 
     /* Navigation */
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #333333; /* Your dark gray */
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  z-index: 1000;
-}
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #333333; /* dark gray banner */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1000;
+    }
 
-nav a {
-  color: white; /* keep nav links readable */
-  text-decoration: none;
-  font-weight: 500;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
 
-header {
-  text-align: center;
-  padding: 4rem 1rem 2rem;
-  background-color: #333333; /* Your dark gray */
-  color: white; /* header text visible on dark background */
-}
+    nav a:hover {
+      opacity: 0.8;
+    }
 
+    /* Header */
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background-color: #333333; /* match nav */
+      color: white;
+    }
 
     header h1 {
       font-size: 3rem;
-      color: #0d6efd;
       margin-bottom: 0.5rem;
     }
 
@@ -73,10 +78,10 @@ header {
     }
 
     section h2 {
-      color: #0d6efd;
+      color: #333333;
       font-size: 2rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #0d6efd;
+      border-bottom: 2px solid #333333;
       display: inline-block;
       padding-bottom: 0.3rem;
     }
@@ -95,22 +100,21 @@ header {
       margin-bottom: 0.5rem;
     }
 
-    /* Buttons */
-  .button {
-    display: inline-block;
-    background-color: #0d6efd; /* current blue */
-    color: white;
-    padding: 0.6rem 1.2rem;
-    margin-top: 0.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s;
-  }
+    /* Links as clean buttons */
+    .button {
+      display: inline-block;
+      background-color: transparent; /* no blue background */
+      color: #0d6efd; /* blue link text */
+      padding: 0;
+      border-radius: 0;
+      text-decoration: underline;
+      font-weight: normal;
+      transition: color 0.3s;
+    }
 
-  .button:hover {
-    background-color: #084298;
-  }
+    .button:hover {
+      color: #084298; /* darker blue on hover */
+    }
 
     /* Footer */
     footer {
@@ -137,11 +141,13 @@ header {
   </style>
 </head>
 <body>
+
   <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#research">Research Areas</a>
     <a href="#contact">Contact</a>
+    <a href="#cv">CV</a>
   </nav>
 
   <!-- Header -->
@@ -150,20 +156,16 @@ header {
     <h3>Associate Professor in Development Economics</h3>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main content -->
   <main>
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I am an Associate Professor (Maître de Conférences) in Development Economics at the 
-        European School of Political and Social Sciences, Catholic University of Lille.
-      </p>
-      <p>
-        My research uses microdata and applied econometric methods to study food security, 
-        natural resources, inequality, child labour, health, and gender in Sub-Saharan Africa.
-      </p>
+      <p>I am an Associate Professor (Maître de Conférences) in Development Economics at the European School of Political and Social Sciences, Catholic University of Lille.</p>
+      <p>My research uses microdata and applied econometric methods to study food security, natural resources, inequality, child labour, health, and gender in Sub-Saharan Africa.</p>
     </section>
 
+    <!-- Research Areas -->
     <section id="research">
       <h2>Research Areas</h2>
       <ul>
@@ -175,23 +177,25 @@ header {
       </ul>
     </section>
 
-    <section id="CV">
-      <h2>CV</h2>
-      <a class="button" href="Frempong_CV.pdf" target="_blank">Download CV (PDF)</a>
-    </section>
-    
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
-      <a class="button" href="Frempong_CV.pdf" target="_blank">Download CV (PDF)</a>
       <p>Email: <a class="button" href="mailto:raymond.frempong@univ-catholille.fr">raymond.frempong@univ-catholille.fr</a></p>
       <p>ORCID: <a class="button" href="https://orcid.org/0000-0002-4603-5570" target="_blank">0000-0002-4603-5570</a></p>
     </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p>Download my full CV below:</p>
+      <a class="button" href="Raymond_Boadi_Frempong_CV.pdf" target="_blank">Download CV (PDF)</a>
+    </section>
   </main>
 
-
-  
+  <!-- Footer -->
   <footer>
     &copy; 2026 Raymond Boadi Frempong. All rights reserved.
   </footer>
+
 </body>
 </html>
