@@ -11,25 +11,23 @@
   <meta name="author" content="Raymond Boadi Frempong">
 
   <style>
-    /* Base Reset */
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height:1.7;
+      font-family: Arial, sans-serif;
+      margin:0; padding:0;
+      background:#f8f9fa;
       color:#333;
-      background-color:#f8f9fa;
+      line-height:1.7;
     }
 
     /* Navigation */
     nav {
-      position: sticky;
-      top:0;
-      background-color:#333333;
-      padding:1rem 2rem;
+      background:#333;
       display:flex;
       justify-content:center;
+      padding:1rem 0;
       gap:2rem;
+      position: sticky;
+      top:0;
       z-index:1000;
     }
     nav a {
@@ -40,57 +38,56 @@
     }
     nav a:hover { opacity:0.8; }
 
-    /* Header */
+    /* Header (Compact Banner) */
     header {
-      text-align:center;
-      padding:4rem 1rem 2rem;
-      background-color:#333333;
+      background:#333;
       color:white;
+      text-align:center;
+      padding:2rem 1rem;
     }
-    header h1 { font-size:3rem; margin-bottom:0.5rem; }
-    header h3 { font-weight:normal; opacity:0.8; font-size:1.3rem; }
+    header h1 { font-size:2.2rem; margin-bottom:0.2rem; }
+    header h3 { font-weight:normal; font-size:1.1rem; opacity:0.8; margin-bottom:0.2rem; }
+    header p { font-size:1rem; opacity:0.8; margin:0; }
 
-    /* Main content */
-    main { max-width:900px; margin:2rem auto; padding:0 1rem; }
-    section { margin-bottom:4rem; }
-    section h2 {
-      color:#333333;
-      font-size:2rem;
+    /* Main Content */
+    main {
+      max-width:900px;
+      margin:2rem auto;
+      padding:0 1rem;
+    }
+    section {
+      margin-bottom:3rem;
+    }
+    h2.section-title {
+      font-size:1.8rem;
       margin-bottom:1rem;
-      border-bottom:2px solid #333333;
+      border-bottom:2px solid #333;
       display:inline-block;
-      padding-bottom:0.3rem;
+      padding-bottom:4px;
     }
-    p { margin-bottom:1rem; font-size:1.05rem; }
-    ul { margin-left:1.5rem; margin-bottom:1rem; }
-    li { margin-bottom:0.5rem; }
     .publication { margin-bottom:1.5rem; }
-
-    /* Links as clean buttons */
     .button {
       display:inline-block;
       background-color:transparent;
       color:#0d6efd;
       padding:0;
-      border-radius:0;
       text-decoration:underline;
       font-weight:normal;
       transition:color 0.3s;
     }
     .button:hover { color:#084298; }
 
-    /* Footer */
     footer {
       text-align:center;
       padding:1.5rem;
       font-size:0.9rem;
       color:#555;
-      background-color:#e9ecef;
+      background:#e9ecef;
+      margin-top:2rem;
     }
 
-    /* Responsive */
     @media(max-width:600px){
-      header h1{font-size:2rem;}
+      header h1{font-size:1.8rem;}
       header h3{font-size:1rem;}
       nav{flex-direction:column; gap:1rem;}
     }
@@ -102,7 +99,7 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="publications.html">Publications</a>
-    <a href="#courses">Courses Taught</a>
+    <a href="#courses">Courses</a>
     <a href="#contact">Contact</a>
     <a href="#cv">CV</a>
   </nav>
@@ -111,12 +108,13 @@
   <header>
     <h1>Raymond Boadi Frempong</h1>
     <h3>Associate Professor (Maître de Conférences) in Development Economics</h3>
+    <p>European School of Political and Social Sciences, Catholic University of Lille</p>
   </header>
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <main>
     <section id="publications">
-      <h2>Publications</h2>
+      <h2 class="section-title">Publications</h2>
 
       <div class="publication">
         Frempong, R. B., Stadelmann, D., & Thiam, D. R. (2024).
@@ -160,7 +158,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     &copy; 2026 Raymond Boadi Frempong. All rights reserved.
   </footer>
