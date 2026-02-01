@@ -5,8 +5,10 @@
     <title>Publications | Raymond Boadi Frempong</title>
     <meta name="description" content="Publications of Raymond Boadi Frempong, Associate Professor in Development Economics. Research on mining, water security, health, energy adoption, and food security in Sub-Saharan Africa.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
+        /* your CSS here */
+    </style>
+</head>
         body {
             font-family: Arial, sans-serif;
             max-width: 900px;
