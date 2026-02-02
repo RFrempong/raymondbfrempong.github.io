@@ -13,27 +13,23 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin:0; padding:0;
+      margin:0;
+      padding:0;
       background:#f8f9fa;
       color:#333;
       line-height:1.7;
     }
-.top-strip {
-  background:#333;
-  color:white;
-  text-align:center;
-  padding:0.5rem 0;
-}
 
-.top-strip .name {
-  font-size:1.6rem;
-  font-weight:bold;
-}
+    /* Top Strip */
+    .top-strip {
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:0.5rem 0;
+      font-size:1.6rem;
+      font-weight:bold;
+    }
 
-.top-strip .title {
-  font-size:1rem;
-  opacity:0.8;
-}
     /* Navigation */
     nav {
       background:#333;
@@ -45,23 +41,17 @@
       top:0;
       z-index:1000;
     }
+
     nav a {
       color:white;
       text-decoration:none;
       font-weight:500;
       transition:opacity 0.3s;
     }
-    nav a:hover { opacity:0.8; }
 
-    /* Top Name Strip (Small Banner) */
-    .top-strip {
-      background:#333;
-      color:white;
-      text-align:center;
-      padding:0.5rem 0;
+    nav a:hover {
+      opacity:0.8;
     }
-    .top-strip .name { font-size:1.6rem; font-weight:bold; }
-    .top-strip .title { font-size:1rem; opacity:0.8; }
 
     /* Main Content */
     main {
@@ -69,35 +59,47 @@
       margin:2rem auto;
       padding:0 1rem;
     }
+
     section {
       margin-bottom:3rem;
     }
+
     h2.section-title {
       font-size:1.8rem;
       margin-bottom:1rem;
-      border-bottom:2px solid #333;
-      display:inline-block;
-      padding-bottom:4px;
     }
-    h3.subsection-title {
-      font-size:1.2rem;
-      margin-top:1rem;
-      margin-bottom:0.5rem;
-    }
-    ul { margin-left:1.5rem; margin-bottom:1rem; }
-    li { margin-bottom:0.5rem; }
 
-    /* Buttons/Links */
+    /* About Layout */
+    .about-flex {
+      display:flex;
+      align-items:flex-start;
+      gap:1.5rem;
+      flex-wrap:wrap;
+    }
+
+    .about-flex img {
+      width:280px;
+      height:280px;
+      object-fit:cover;
+      border-radius:8px;
+      border:1px solid #ccc;
+    }
+
+    .about-flex div {
+      flex:1;
+      min-width:300px;
+    }
+
+    /* Buttons */
     .button {
-      display:inline-block;
-      background-color:transparent;
       color:#0d6efd;
-      padding:0;
       text-decoration:underline;
-      font-weight:normal;
       transition:color 0.3s;
     }
-    .button:hover { color:#084298; }
+
+    .button:hover {
+      color:#084298;
+    }
 
     footer {
       text-align:center;
@@ -108,117 +110,86 @@
       margin-top:2rem;
     }
 
-    /* About Section Flex */
-    .about-flex {
-      display:flex;
-      align-items:flex-start;
-      gap:1rem;
-      flex-wrap:wrap;
-    }
-    .about-flex img {
-      width:150px;
-      height:150px;
-      object-fit:cover;
-      border:1px solid #ccc;
-    }
-    .about-flex div {
-      flex:1;
-      min-width:200px;
+    @media(max-width:768px){
+      .about-flex {
+        flex-direction:column;
+      }
+
+      nav {
+        flex-direction:column;
+        gap:1rem;
+      }
     }
 
-    @media(max-width:600px){
-      .about-flex { flex-direction:column; align-items:center; text-align:center; }
-      .about-flex div { text-align:center; }
-      .about-flex img { margin-bottom:0.5rem; }
-      nav { flex-direction:column; gap:1rem; }
-    }
   </style>
 </head>
+
 <body>
 
-  <!-- Top Name Strip -->
+  <!-- Name Strip -->
   <div class="top-strip">
-    <div class="name">Raymond Boadi Frempong</div>
-    <!--
-    <div class="title">Associate Professor (Maître de Conférences) in Development Economics</div>
-    -->
+    Raymond Boadi Frempong
   </div>
 
   <!-- Navigation -->
   <nav>
-    <a href="index.html#">Home</a>
-    <a href="#research">Research</a>
+    <a href="index.html">Home</a>
     <a href="publications.html">Publications</a>
     <a href="course.html">Courses</a>
     <a href="#contact">Contact</a>
-    <!--
-    <a href="index.html#cv">CV</a>
-    -->
   </nav>
 
   <main>
-    
-style="max-width:900px; margin:2rem auto; padding:0 1rem;">
-  <section id="about">
-    <div style="display:flex; align-items:flex-start; gap:1rem; flex-wrap:wrap;">
-      <!-- Photo on the left -->
-      <img src="picture.jpg" alt="Raymond Boadi Frempong"
-           style="width:300px; height:300px; object-fit:cover; border:1px solid #ccc; border-radius:8px; margin-left:-0.5rem;">
 
-      <!-- Text on the right -->
-      <div style="flex:1;">
-        <h2 style="border-bottom:none;">Dr. Raymond Frempong</h2>
-        <p>I am an Associate Professor (Maître de Conférences) in Development Economics at the European School of Political and Social Sciences, Catholic University of Lille.</p>
-        <p>My research uses microdata and applied econometric methods to study food security, natural resources, inequality, child labour, health, and gender in Sub-Saharan Africa. I am particularly interested in how behavioral traits, environmental factors, and policy interventions shape development outcomes for vulnerable populations.</p>
-        <p>I hold a PhD in Economics (with Distinction) from the University of Bayreuth, Germany, and have published in leading journals including <em>World Development</em>, <em>Applied Economic Perspectives and Policy</em>, <em>Journal of Development Studies</em>, and <em>Energy Economics</em>. My work has been supported by grants from organizations including the African Economic Research Consortium and the United Nations University World Institute for Development Economics Research.</p>
-        <p>I am committed to research that addresses inequality, exclusion, and sustainable development, with particular focus on gender equity, child welfare, and the economic challenges facing rural communities across Africa.</p>
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-flex">
+        <img src="picture.jpg" alt="Raymond Boadi Frempong">
+
+        <div>
+          <h2 class="section-title">Dr. Raymond Frempong</h2>
+
+          <p>I am an Associate Professor (Maître de Conférences) in Development Economics at the European School of Political and Social Sciences, Catholic University of Lille.</p>
+
+          <p>My research uses microdata and applied econometric methods to study food security, natural resources, inequality, child labour, health, and gender in Sub-Saharan Africa. I am particularly interested in how behavioral traits, environmental factors, and policy interventions shape development outcomes for vulnerable populations.</p>
+
+          <p>I hold a PhD in Economics (with Distinction) from the University of Bayreuth, Germany, and have published in leading journals including <em>World Development</em>, <em>Applied Economic Perspectives and Policy</em>, <em>Journal of Development Studies</em>, and <em>Energy Economics</em>. My work has been supported by grants from organizations including the African Economic Research Consortium and the United Nations University World Institute for Development Economics Research.</p>
+
+          <p>I am committed to research that addresses inequality, exclusion, and sustainable development, with particular focus on gender equity, child welfare, and the economic challenges facing rural communities across Africa.</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Email + CV / Scholar -->
-    <p><strong>Email:</strong> <a href="mailto:raymond.frempong@univ-catholille.fr" class="button">raymond.frempong@univ-catholille.fr</a></p>
-    <p>
-      <a class="button" href="Raymond_Boadi_Frempong_CV.pdf" target="_blank">Download CV (PDF)</a> |
-      <a class="button" href="https://scholar.google.com/citations?user=j1Z9TOkAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
-     <a href="https://espol.school/en/team/raymond-boadi-frempong/" target="_blank"class="button">European School of Political and Social Sciences (ESPOL)
-    </p>
-  </section>
+      <!-- Links -->
+      <p><strong>Email:</strong> 
+        <a href="mailto:raymond.frempong@univ-catholille.fr" class="button">
+          raymond.frempong@univ-catholille.fr
+        </a>
+      </p>
 
+      <p>
+        <a class="button" href="Raymond_Boadi_Frempong_CV.pdf" target="_blank">Download CV (PDF)</a> |
+        <a class="button" href="https://scholar.google.com/citations?user=j1Z9TOkAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+        <a class="button" href="https://espol.school/en/team/raymond-boadi-frempong/" target="_blank">Institutional Profile (ESPOL)</a>
+      </p>
 
+    </section>
 
-
-<!--
-<section id="research">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Development Economics</li>
-    <li>Natural Resources and Inequality</li>
-    <li>Food Security and Nutrition</li>
-    <li>Child Labour and Household Decision-Making</li>
-    <li>Gender and Intra-Household Bargaining</li>
-  </ul>
-</section>
--->
-
-    
     <!-- Contact -->
     <section id="contact">
       <h2 class="section-title">Contact</h2>
-    
-      <p><strong>Office</strong>: LW 120, Bâtiment Louis Weiss</p>
+
+      <p><strong>Office:</strong> LW 120, Bâtiment Louis Weiss</p>
+
       <p>
         European School of Political and Social Sciences (ESPOL)<br>
         Catholic University of Lille<br>
         60 Boulevard Vauban<br>
         59016 Lille<br>
-        France.
+        France
       </p>
-      <p><strong>Institutional Profile:</strong> 
-  <a href="https://espol.school/en/team/raymond-boadi-frempong/" target="_blank"class="button">European School of Political and Social Sciences (ESPOL)
-  </a>
-</p>
+
     </section>
-    
+
   </main>
 
   <footer>
