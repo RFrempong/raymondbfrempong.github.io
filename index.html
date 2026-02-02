@@ -43,19 +43,20 @@
       background:#333;           
       color:white;
       text-align:center;
-      padding:0.5rem 0.5rem;          /* smaller vertical padding */
-      position:static;            /* header stays in place, nav scrolls normally */
+      padding:1rem 1rem;          
+      position:static;            
+    }
+    header img {
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      display:block;
+      margin:0 auto 0.5rem;
+      object-fit:cover;
     }
     header h1 { font-size:1.8rem; margin-bottom:0.2rem; }
     header h3 { font-weight:normal; font-size:1rem; opacity:0.8; margin-bottom:0.2rem; }
     header p { font-size:0.9rem; opacity:0.8; margin:0; }
-
-<header>
-  <img src="photo.jpg" alt="Raymond Boadi Frempong" style="width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 0.5rem;">
-  <h1>Raymond Boadi Frempong</h1>
-  <h3>Associate Professor (Maître de Conférences) in Development Economics</h3>
-  <p>European School of Political and Social Sciences, Catholic University of Lille</p>
-</header>
 
     /* Main Content */
     main {
@@ -102,8 +103,9 @@
     }
 
     @media(max-width:600px){
-      header h1{font-size:1.8rem;}
-      header h3{font-size:1rem;}
+      header img { width:90px; height:90px; }
+      header h1{font-size:1.5rem;}
+      header h3{font-size:0.9rem;}
       nav{flex-direction:column; gap:1rem;}
     }
   </style>
@@ -122,6 +124,7 @@
 
   <!-- Header -->
   <header>
+    <img src="photo.jpg" alt="Raymond Boadi Frempong">
     <h1>Raymond Boadi Frempong</h1>
     <h3>Associate Professor (Maître de Conférences) in Development Economics</h3>
     <p>European School of Political and Social Sciences, Catholic University of Lille</p>
@@ -132,7 +135,7 @@
 
     <!-- About -->
     <section id="about">
-      <h2 class="section-title">Raymond Frempong</h2>
+      <h2 class="section-title">About Me</h2>
       <p>I am an Associate Professor (Maître de Conférences) in Development Economics at the European School of Political and Social Sciences, Catholic University of Lille.</p>
       <p>My research uses microdata and applied econometric methods to study food security, natural resources, inequality, child labour, health, and gender in Sub-Saharan Africa.</p>
     </section>
