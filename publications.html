@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications | Raymond Boadi Frempong</title>
 
-  <!-- SEO Meta Tags -->
   <meta name="description" content="Publications of Raymond Boadi Frempong, Associate Professor in Development Economics. Research on mining, water security, child labor, energy adoption, and food security in Sub-Saharan Africa.">
   <meta name="keywords" content="Raymond Boadi Frempong, Development Economics, Publications, Africa, Food Security, Child Labour, Research">
   <meta name="author" content="Raymond Boadi Frempong">
@@ -38,19 +37,15 @@
     }
     nav a:hover { opacity:0.8; }
 
-    /* Header (Compact Banner) */
-/* Header (Compact and Static) */
-header {
-  background:#333;           /* dark banner color */
-  color:white;
-  text-align:center;
-  padding:0.5rem 0.5rem;         /* smaller vertical padding */
-  position:static;           /* stays at the top, not sticky */
-}
-header h1 { font-size:1.8rem; margin-bottom:0.2rem; }
-header h3 { font-weight:normal; font-size:1rem; opacity:0.8; margin-bottom:0.2rem; }
-header p { font-size:0.9rem; opacity:0.8; margin:0; }
-
+    /* Top Name Strip */
+    .top-strip {
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:0.5rem 0;
+    }
+    .top-strip .name { font-size:1.6rem; font-weight:bold; }
+    .top-strip .title { font-size:1rem; opacity:0.8; }
 
     /* Main Content */
     main {
@@ -58,9 +53,7 @@ header p { font-size:0.9rem; opacity:0.8; margin:0; }
       margin:2rem auto;
       padding:0 1rem;
     }
-    section {
-      margin-bottom:3rem;
-    }
+    section { margin-bottom:3rem; }
     h2.section-title {
       font-size:1.8rem;
       margin-bottom:1rem;
@@ -68,7 +61,11 @@ header p { font-size:0.9rem; opacity:0.8; margin:0; }
       display:inline-block;
       padding-bottom:4px;
     }
-    .publication { margin-bottom:1.5rem; }
+    .publication {
+      margin-bottom:1.5rem;
+    }
+
+    /* Buttons/Links */
     .button {
       display:inline-block;
       background-color:transparent;
@@ -90,76 +87,73 @@ header p { font-size:0.9rem; opacity:0.8; margin:0; }
     }
 
     @media(max-width:600px){
-      header h1{font-size:1.8rem;}
-      header h3{font-size:1rem;}
-      nav{flex-direction:column; gap:1rem;}
+      nav { flex-direction:column; gap:1rem; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Top Name Strip -->
+  <div class="top-strip">
+    <div class="name">Raymond Boadi Frempong</div>
+    <div class="title">Associate Professor (Maître de Conférences) in Development Economics</div>
+  </div>
+
   <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
-    <a href="index.html#research">Research</a>
-    <a href="index.html#publications.html">Publications</a>
-    <a href="index.html#courses">Courses</a>
-    <a href="index.html#contact">Contact</a>
-    <a href="index.html#cv">CV</a>
+    <a href="publications.html">Publications</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+    <a href="#cv">CV</a>
   </nav>
 
-  <!-- Header -->
-  <header>
-    <h1>Raymond Boadi Frempong</h1>
-    <h3>Associate Professor (Maître de Conférences) in Development Economics</h3>
-    <p>European School of Political and Social Sciences, Catholic University of Lille</p>
-  </header>
-
-  <!-- Main Content -->
   <main>
+
     <section id="publications">
       <h2 class="section-title">Publications</h2>
 
       <div class="publication">
-        Frempong, R. B., Stadelmann, D., & Thiam, D. R. (2024).
-        <em>How current and past mining activities affect water security and health.</em>
-        Applied Economic Perspectives and Policy.
+        Frempong, R. B., Stadelmann, D., & Thiam, D. R. (2024). 
+        <em>How current and past mining activities affect water security and health.</em> 
+        Applied Economic Perspectives and Policy. 
         <a class="button" href="https://doi.org/10.1002/aepp.13510" target="_blank">DOI</a>
       </div>
 
       <div class="publication">
-        Frempong, R. B., Stadelmann, D., & Thiam, D. R. (2024).
-        <em>Clean Energy adoption in developing countries: New evidence of the relevance of risk aversion and education.</em>
-        Journal of Development Studies.
+        Frempong, R. B., Stadelmann, D., & Thiam, D. R. (2024). 
+        <em>Clean Energy adoption in developing countries: New evidence of the relevance of risk aversion and education.</em> 
+        Journal of Development Studies. 
         <a class="button" href="https://doi.org/10.1080/00220388.2024.2407820" target="_blank">DOI</a>
       </div>
 
       <div class="publication">
-        Frempong, R. B., Gross, E., & Owusu, V. (2023).
-        <em>Crop diversity, sustainable food and nutritional security among smallholder farmers in Ghana.</em>
-        British Food Journal.
+        Frempong, R. B., Gross, E., & Owusu, V. (2023). 
+        <em>Crop diversity, sustainable food and nutritional security among smallholder farmers in Ghana.</em> 
+        British Food Journal. 
         <a class="button" href="https://doi.org/10.1108/BFJ-12-2022-1060" target="_blank">DOI</a>
       </div>
 
       <div class="publication">
-        Frempong, R. B., Kitzmüller, L., & Stadelmann, D. (2021).
-        <em>A micro-based approach to evaluate the effect of water supply on health in Uganda.</em>
-        World Development, 145, 105522.
+        Frempong, R. B., Kitzmüller, L., & Stadelmann, D. (2021). 
+        <em>A micro-based approach to evaluate the effect of water supply on health in Uganda.</em> 
+        World Development, 145, 105522. 
         <a class="button" href="https://doi.org/10.1016/j.worlddev.2021.105522" target="_blank">DOI</a>
       </div>
 
       <div class="publication">
-        Frempong, R. B., & Stadelmann, D. (2021).
-        <em>Risk preference and child labor: Econometric evidence.</em>
-        Review of Development Economics, 25(2), 878–894.
+        Frempong, R. B., & Stadelmann, D. (2021). 
+        <em>Risk preference and child labor: Econometric evidence.</em> 
+        Review of Development Economics, 25(2), 878–894. 
         <a class="button" href="https://doi.org/10.1111/rode.12746" target="_blank">DOI</a>
       </div>
 
       <p>
-        <a class="button" href="Raymond_Boadi_Frempong_CV.pdf" target="_blank">Download CV (PDF)</a>
+        <a class="button" href="Raymond_Boadi_Frempong_CV.pdf" target="_blank">Download CV (PDF)</a> | 
         <a class="button" href="https://scholar.google.com/citations?user=j1Z9TOkAAAAJ&hl=en" target="_blank">Google Scholar</a>
       </p>
     </section>
+
   </main>
 
   <footer>
