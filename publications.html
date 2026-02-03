@@ -55,17 +55,6 @@
       opacity:0.8;
     }
 
-    /*
-    .top-strip {
-      background:#333;
-      color:white;
-      text-align:center;
-      padding:0.5rem 0;
-    }
-    .top-strip .name { font-size:1.6rem; font-weight:bold; }
-    .top-strip .title { font-size:1rem; opacity:0.8; }
-    */
-
     /* Main Content */
     main {
       max-width:1100px;
@@ -105,19 +94,51 @@
       margin-top:2rem;
     }
 
-    @media(max-width:600px){
-      nav .nav-container { flex-direction:column; gap:1rem; }
+    /* Mobile & Tablet Responsive */
+    @media(max-width:768px){
+      nav .nav-container {
+        flex-direction:column;
+        gap:1rem;
+        align-items:flex-start;
+      }
+
+      nav .site-title {
+        font-size:1.2rem;
+      }
+
+      nav a {
+        padding:0.3rem 0;
+      }
+
+      h2.section-title {
+        font-size:1.5rem;
+      }
+
+      main {
+        margin:1rem auto;
+      }
+
+      .publication {
+        margin-bottom:1.2rem;
+      }
+    }
+
+    @media(max-width:480px){
+      nav .site-title {
+        font-size:1.1rem;
+      }
+
+      body {
+        font-size:0.95rem;
+      }
+
+      h2.section-title {
+        font-size:1.3rem;
+      }
     }
   </style>
 </head>
 <body>
-
-  <!--
-  <div class="top-strip">
-    <div class="name">Raymond Boadi Frempong</div>
-    <div class="title">Associate Professor (Maître de Conférences) in Development Economics</div>
-  </div>
-  -->
 
   <!-- Navigation -->
   <nav>
